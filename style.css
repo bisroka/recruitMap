@@ -29,7 +29,6 @@ header{
 }
 .map {
     display: block;
-    /* height: 60vh; */
 }
 
 #mapsvg {
