@@ -1,0 +1,123 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+section{
+    margin-top: 3vh;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: #f1f3f7;
+    overflow-x: hidden;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 12px;
+}
+header{
+    background-color: black;
+    height: 10vh;
+    color:white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 2vh;
+}
+.about{
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 3vh auto;
+    
+}
+.map {
+    display: block;
+    /* height: 60vh; */
+}
+
+#mapsvg {
+    width: 90vw;
+    margin-left: 5vw;
+   
+}
+
+.slider {
+    display: none;
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #f1f3f7;
+    width: 100vw;
+    height: 100vh;
+}
+.slider__header{
+    font-size: 1.2rem;
+    margin: 1vh 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.slider__desc{
+max-width: 800px;
+font-size: 1rem;
+margin: 0 auto;
+}
+.slider__pictures{
+    max-width: 800px;
+    margin:0 auto;
+}
+.slider__button{
+    background-color: darkolivegreen;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 40vw;
+    padding:2vh 5vh;
+    font-size: 3vh;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    transition: .5;
+}
+.slider__button:hover{
+    background-color: darkcyan;
+    color: white;
+}
+.main-picture {
+    max-height: 40vh;
+}
+
+.small-picture {
+    max-width: 100px;
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    background-color: black;
+    color: white;
+    height: 7vh;
+    width:100vw;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+@media (min-width: 599px){
+    .about{
+        font-size: 1.2rem;
+    }
+    #mapsvg{
+        margin-left: 10vw;
+    }
+}
+@media(min-width: 799px){
+    .about{
+        font-size: 1.4rem;
+    }
+    .main-picture {
+        max-height: 40vh;
+        margin: 3vh;
+    }
+    
+#mapsvg{
+    margin-left: 10vw;
+}
+}
+
